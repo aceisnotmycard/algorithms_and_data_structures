@@ -1,2 +1,2 @@
-# algorithms_and_data_structures
+# Algorithms and data structures
 The best way to learn something is to do it.
