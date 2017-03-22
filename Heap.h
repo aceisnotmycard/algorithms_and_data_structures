@@ -8,11 +8,12 @@
 
 #include <vector>
 
+template<typename T>
 class Heap {
 public:
     Heap() {}
 
-    int pop() {
+    T pop() {
         auto result = _data[0];
         _data[0] = _data[_data.size() - 1];
         _data.pop_back();
@@ -20,7 +21,7 @@ public:
         return result;
     }
 
-    void push(int value) {
+    void push(T value) {
         _data.push_back(value);
         sift_up(_data.size() - 1);
     }
@@ -30,7 +31,7 @@ public:
     }
 
 private:
-    std::vector<int> _data;
+    std::vector<T> _data;
 
     inline size_t parent_pos(size_t child_pos) const {
         return child_pos / 2;

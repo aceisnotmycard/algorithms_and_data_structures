@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sbogolepov/dev/algorithms_and_data_structures/Heap.cpp
+iostream
+-
+Heap.h
+/Users/sbogolepov/dev/algorithms_and_data_structures/Heap.h
+
+/Users/sbogolepov/dev/algorithms_and_data_structures/Heap.h
+vector
+-
+
